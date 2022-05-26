@@ -5,10 +5,13 @@ tap "homebrew/services"
 
 brew "exa"
 brew "fish"
+brew "mas"
 brew "neovim"
 brew "node"
 brew "thefuck"
 brew "wget"
+
+mas "SnippetsLab", id: 1006087419
 
 cask "brave-browser"
 cask "cleanmymac"
