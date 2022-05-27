@@ -9,6 +9,7 @@ local options = {
 	number = true,		        -- show line numbers
 	shiftwidth = 4,		        -- number of spaces for each indent
 	showtabline = 4,	        -- always show tabs
+    splitright = true,
 	smartindent = true,
 	tabstop = 4, 		        -- insert 4 spaces for a tab:    termguicolors = true, 
 }
@@ -16,5 +17,3 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
-
-
