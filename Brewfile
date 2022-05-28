@@ -8,6 +8,7 @@ brew "fish"
 brew "mas"
 brew "neovim"
 brew "node"
+brew "ripgrep"
 brew "thefuck"
 brew "wget"
 
