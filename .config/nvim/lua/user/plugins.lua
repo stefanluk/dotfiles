@@ -18,6 +18,8 @@ Plug 'windwp/nvim-autopairs'            -- Autopairs
 Plug 'akinsho/bufferline.nvim'          -- Bufferline plugin
 Plug 'kyazdani42/nvim-web-devicons'     -- Icons (required for Bufferline)
 Plug 'kyazdani42/nvim-tree.lua'         -- Nvim Tree
+Plug "numToStr/Comment.nvim"            -- Easily comment stuff
+Plug 'JoosepAlviste/nvim-ts-context-commentstring' -- Contextual commentstring
 
 -- Completion plugins
 Plug 'hrsh7th/nvim-cmp'                 -- Completion plugin
