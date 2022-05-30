@@ -13,7 +13,8 @@ local options = {
     signcolumn = "yes",         -- always show the sign column, otherwise it would shift the text
     splitright = true,
 	smartindent = true,
-	tabstop = 4, 		        -- insert 4 spaces for a tab:    termguicolors = true, 
+	tabstop = 4, 		        -- insert 4 spaces for a tab:
+    termguicolors = true,
 }
 
 for k, v in pairs(options) do
