@@ -26,10 +26,3 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", "<Esc>:m .+1<cr>", opts)
 keymap("v", "<A-k>", "<Esc>:m .-2<cr>", opts)
-
--- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
--- Telescope
-keymap("n", "<leader>p", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>f", "<cmd>Telescope live_grep<cr>", opts)
