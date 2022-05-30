@@ -24,7 +24,7 @@ Plug 'JoosepAlviste/nvim-ts-context-commentstring' -- Contextual commentstring
 -- Completion plugins
 Plug 'hrsh7th/nvim-cmp'                 -- Completion plugin
 Plug 'hrsh7th/cmp-nvim-lsp'             -- LSP completion plugin
-Plug 'hrsh7th/cmp-nvim-lua'             
+Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'hrsh7th/cmp-buffer'               -- Buffer completion
 Plug 'hrsh7th/cmp-path'                 -- Path completion
 Plug 'hrsh7th/cmp-cmdline'              -- Command Line completion
@@ -44,4 +44,5 @@ Plug 'nvim-telescope/telescope.nvim'    -- Telescope plugin
 -- Treesitter
 Plug 'nvim-treesitter/nvim-treesitter'  -- Treesitter plugin
 
+Plug 'folke/which-key.nvim'
 vim.call('plug#end')
