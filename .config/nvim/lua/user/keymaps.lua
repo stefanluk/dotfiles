@@ -13,6 +13,9 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-w>", ":bdelete!<CR>", opts)
 
+-- Copy current file path to buffer
+keymap("n", "cp", ":let @+ = expand('%')<CR>", opts)
+
 -- Move text up and down
 keymap("n", "<A-j>", "<Esc>:m .+1<cr>", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<cr>", opts)
@@ -24,5 +27,6 @@ keymap("i", "jj", "<ESC>", opts)
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
-keymap("v", "<A-j>", "<Esc>:m .+1<cr>", opts)
-keymap("v", "<A-k>", "<Esc>:m .-2<cr>", opts)
+-- Move text up and down
+keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", opts)
+keymap("v", "<A-j>", ":m '>+1<cr>gv=gv", opts)

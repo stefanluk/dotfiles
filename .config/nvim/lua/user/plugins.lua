@@ -45,4 +45,9 @@ Plug 'nvim-telescope/telescope.nvim'    -- Telescope plugin
 Plug 'nvim-treesitter/nvim-treesitter'  -- Treesitter plugin
 
 Plug 'folke/which-key.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'akinsho/toggleterm.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+
 vim.call('plug#end')

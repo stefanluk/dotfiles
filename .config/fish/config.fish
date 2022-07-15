@@ -1,13 +1,18 @@
-source ~/.fish_variables
-
-fzf_configure_bindings --directory=\cf
+# source ~/vpn.proxy.zshrc
 
 # aliases
 alias vim="nvim"
 alias ls="exa -alh"
-alias bm="bin/magento"
-alias magsup="sh ~/Scripts/magento/setup-magento.sh"
-alias magdb="sh ~/Scripts/magento/get-magento-db.sh"
-alias magmedia="sh ~/Scripts/magento/get-magento-media.sh"
-alias mem="php -d memory_limit=-1"
 alias cfg="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+
+thefuck --alias | source
+
+if /opt/cisco/anyconnect/bin/vpn status | grep "Connected" -m 1 -q
+    set_color yellow; echo "Cisco AnyConnect VPN active"
+    export ALL_PROXY=http://proxy.anwb.local:8080 # used by Homebrew
+    export npm_config_proxy=$ALL_PROXY
+    export npm_config_https_proxy=$ALL_PROXY
+else
+    set_color yellow; echo "Cisco AnyConnect VPN inactive"
+end
+

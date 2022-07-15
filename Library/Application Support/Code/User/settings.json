@@ -1,29 +1,32 @@
 {
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    "colorize.colorized_variables": [
-        "LESS"
-    ],
-    "editor.wordWrap": "on",
-    "files.defaultLanguage": "html",
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "highlight-matching-tag.highlightFromContent": true,
-    "highlight-matching-tag.highlightSelfClosing": true,
-    "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "Community Material Theme High Contrast",
-    "workbench.colorCustomizations": {
-        "[Community Material Theme High Contrast]": {
-            "sideBar.foreground": "#cccccc",
-            "gitDecoration.ignoredResourceForeground": "#888888",
-        }
-    },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.easymotion": true,
+  "colorize.colorized_variables": ["LESS"],
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.defaultLanguage": "html",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "highlight-matching-tag.highlightFromContent": true,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.easymotion": true,
+  "workbench.colorTheme": "Community Material Theme High Contrast",
+  "workbench.colorCustomizations": {
+    "[Community Material Theme High Contrast]": {
+      "sideBar.foreground": "#cccccc",
+      "gitDecoration.ignoredResourceForeground": "#888888"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "sync.gist": "5e1f9ab90dc3706c52aba89bb6cb43b3"
 }
